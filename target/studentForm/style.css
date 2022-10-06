@@ -1,0 +1,9 @@
+
+.divH1{
+	border: green;
+	border-width: 5px;
+	border-style: solid;
+	width: 50%;
+	margin: auto;
+	box-shadow: 5px 10px yellow;
+}

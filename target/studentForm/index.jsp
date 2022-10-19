@@ -6,9 +6,13 @@
 <title>CS Survey Page</title>
 
 </head>
+
+<%--Heading Definition --%>
 <body style="background-color:#888810">
 	<div class= "divH1"><h1 style="color:green" align = "center">George Mason University Survey Form</h1></div>
 	<br/><br/>
+
+<%--Initiation of form with form.css as style-sheet --%>
 
  <form class="w3-container w3-card-4" autocomplete="on" style="max-width:1000px; margin:auto">
    <label for="name" class="w3-text-green" >Name:</label> <input class="w3-input w3-border" type="text"  name="name" placeholder="required"
@@ -41,6 +45,7 @@
   <br/>
   <br/>
 
+<%--CheckBox --%>
   <p style="color:yellow">Things liked by Students</p>
   <input class="w3-check" type="checkbox" name="students">
   <label for="vehicle1" style="color:yellow"> Students</label>
@@ -54,6 +59,7 @@
   <label for="vehicle1" style="color:yellow"> Sports</label>
 
 
+<%--Radio Buttons --%>
   <p style="color:green">What makes interest in GMU:</p>
   <input class="w3-radio" type="radio"  name="friend" >
   <label for="friend" style="color:green">Friend</label>
@@ -63,6 +69,8 @@
   <label for="internet" style="color:green">Internet</label>
   <input class="w3-radio" type="radio"  name="other" >
   <label for="other" style="color:green">Other</label>
+
+<%--Provison for additional comments --%>
 
 <p><label for="w3review" style="color:yellow">Additional Comments:</label></p>
   <textarea id="w3review" name="w3review" rows="4" cols="50" style="color:green">Provide your additional comments about school here.</textarea>

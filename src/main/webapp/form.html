@@ -1,0 +1,149 @@
+<!-- This code is for the part2 survey form -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Part 1 Static Webpage</title>
+<meta charset="UTF-8">
+<meta name="'Bhavya Antiya" content="SWE 645 HW1 Part 2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Linking the custom external stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="text-box">
+          <h1 id="title">WELLCOME TO Gamer's Den!</h1><hr>
+            <p id="description">Please fill in the survey form for us:</p>
+        </div>
+    </header>
+    <!-- Starting the survey form here -->
+    <div class="container">
+    <form id="survey-form" method="GET">
+
+        <div class="labels">
+            <label id="name-label" for="firstname">* First Name</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your first name" required autofocus>
+        </div>
+
+        <div class="labels">
+            <label id="name-label" for="lastname">* Last Name</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your last name" required autofocus>
+        </div>
+    
+        <div class="labels">
+            <label id="name-label" for="street">* Street Address</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="" id="name" name="name" placeholder="Enter your street address" required autofocus>
+        </div>    
+
+        <div class="labels">
+            <label id="email-label" for="city">* City</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="email" name="email" placeholder="eg. Fairfax" required>
+        </div>
+        
+        <div class="labels">
+            <label id="number-label" for="state">* State</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="number" name="number" min="1" max="120" placeholder="eg. Virginia" required>
+        </div>
+
+        <div class="labels">
+            <label id="name-label" for="zipcode">* Zipcode</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="number" id="name" name="name" placeholder="eg. 20030" required autofocus>
+        </div>
+
+        <div class="labels">
+            <label id="name-label" for="mobile">* Mobile Number</label>
+        </div>
+        <div class="input-tab">
+                <input class="input-field" type="number" id="name" name="name" placeholder="(000)-000-0000" required autofocus>
+        </div>
+            
+        <div class="labels">
+            <label id="name-label" for="email">* Email</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="email" id="name" name="name" placeholder="email@email.com" required autofocus>
+        </div>
+
+        <div class="labels">
+            <label id="name-label" for="date">* Date of Survey</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="mm/dd/yyyy" required autofocus>
+        </div>
+        
+        <!-- Checkbox -->
+        <div class="labels">
+            <label> What do you like most about the campus? <br>(Check all that apply):</label></div>
+            <div class="input-tab"><br>
+            <input type="checkbox" name="alone" value="students">Students<br>
+            <input type="checkbox" name="friends" value="location">Location<br>
+            <input type="checkbox" name="family" value="campus">Campus<br>
+            <input type="checkbox" name="partner" value="atmosphere">Atmosphere<br>
+            <input type="checkbox" name="other" value="dorm rooms">Dorm Rooms<br>
+            <input type="checkbox" name="partner" value="Sports">Sports<br>
+        </div> 
+
+        <!-- Radio button -->
+        <div class="labels">
+        <label> How you became interested in the university?</label></div>
+        <div class="input-tab"><br>
+            <input type="radio" name="radio-button" value="Friends">Friends<br>
+            <input type="radio" name="radio-button" value="Television">Television<br>
+            <input type="radio" name="radio-button" value="Internet">Internet<br>
+            <input type="radio" name="radio-button" value="Others">Others<br>
+        </div> 
+    
+        <!-- Dropdown -->
+        <div class="labels">
+            <label for="dropdown">Do you recommend this university to other students?</label></div>
+            <div class="input-tab">
+            <select id="dropdown" name="site">
+                <option disabled value selected>Select an option</option>
+                <option value="students">Very Likely</option>
+                <option value="location">Likely</option>
+                <option value="campus">Unlikely</option>
+            </select>
+        </div>
+        
+        <!-- Raffel -->
+        <div class="labels">
+            <label id="name-label" for="date">Try your luck for movie tickets!<br>Enter at least ten comma separated
+                numbers ranging from 1 to 100</label>
+        </div>
+        <div class="input-tab">
+            <input class="input-field" type="text" id="name" name="name" placeholder="Raffel" 
+            pattern="((([1-9]|[1-9][0-9]|100),){9}([1-9]|[1-9][0-9]|100){1}(,([1-9]|[1-9][0-9]|100))*)$" required autofocus>
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="labels">
+        <label for="comments">Additional Comments</label></div>
+        <div class="input-tab">
+        <textarea class="input-field" id="comments" name="comments" rows="10" cols="40" placeholder="Your comments..."></textarea></div>
+        
+        <!-- Submit button to submit the form-->
+        <div class="btn">
+        <button id="submit" type="submit">Submit</button>
+        </div>
+
+        <!-- Cancel button to cancel the form-->
+        <div class="btn">
+            <button id="submit" type="submit">Cancel</button>
+        </div>
+        
+    </form>
+    </div>    
+</body>
+</html>

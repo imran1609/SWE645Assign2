@@ -20,7 +20,7 @@ pipeline {
         stage('Push Image To Hub'){
             steps{
                 script{
-                    bat 'docker login -u imran1609 --password-stdin imran1609'
+                    bat 'docker login -u imran1609 -p imran1609'
                     bat 'docker push imran1609/sweassign2'
 
                 }

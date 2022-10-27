@@ -20,11 +20,12 @@ pipeline {
         stage('Push Image To Hub'){
             steps{
                 script{
-                    sh 'docker login -u imran1609 -p imran1609'
+                   sh 'docker login -u imran1609 -p imran1609'
                     sh 'docker push imran1609/sweassign2'
 
-                }
+
             }
         }
     }
+}
 }

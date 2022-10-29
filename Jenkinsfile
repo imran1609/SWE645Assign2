@@ -29,7 +29,7 @@ pipeline {
 		stage("Deploying to Kubernetes"){
 			steps{
 				script{
-					sh 'kubectl set image deployment/assignment2dep assignment2dep=imran1609/sweassign2:${BUILD_TIMESTAMP}'
+					sh 'kubectl set image deployment/assignment2dep sweassign2=imran1609/sweassign2:${BUILD_TIMESTAMP}'
 				}
 			}
 		}
